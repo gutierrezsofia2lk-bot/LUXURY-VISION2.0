@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Accesorios | Luxury Vision</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body{margin:0;font-family:'Inter',sans-serif;background:#f5efe6;color:#4b3621;}
+header{text-align:center;padding:30px 20px;}
+header h1{font-family:'Playfair Display',serif;}
+.productos{padding:40px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.card{background:#fffaf3;border-radius:18px;padding:15px;box-shadow:0 10px 25px rgba(0,0,0,.1);}
+.card img{width:100%;height:220px;object-fit:cover;border-radius:14px;}
+.card h3{font-family:'Playfair Display',serif;margin:15px 0 5px;}
+.acciones{margin-top:15px;}
+.cantidad{display:flex;align-items:center;gap:10px;}
+.cantidad button{background:#ede3d4;border:none;padding:6px 12px;border-radius:8px;}
+.add{margin-top:15px;width:100%;padding:12px;border:none;border-radius:25px;background:#6b4f3f;color:white;}
+footer{text-align:center;padding:30px;font-size:13px;color:#6b4f3f;}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Accesorios</h1>
+  <p>Complementos para ópticas</p>
+</header>
+
+<section class="productos">
+<div class="grid">
+
+<div class="card">
+  <img src="https://via.placeholder.com/400x300" alt="Estuche">
+  <h3>Estuche Premium</h3>
+  <p>Protección elegante</p>
+  <div class="acciones">
+    <div class="cantidad">
+      <button onclick="if(this.nextElementSibling.textContent>1)this.nextElementSibling.textContent--">−</button>
+      <span>1</span>
+      <button onclick="this.previousElementSibling.textContent++">+</button>
+    </div>
+  </div>
+  <button class="add"
+  onclick="
+  const q=this.previousElementSibling.querySelector('span').textContent;
+  window.open('https://wa.me/50371742626?text=Hola%20Luxury%20Vision,%20quiero%20cotizar:%0A•%20Estuche%20Premium%0A•%20Cantidad:%20'+q,'_blank');
+  ">
+  Agregar a mi canasta
+  </button>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/400x300" alt="Paño">
+  <h3>Paño Microfibra</h3>
+  <p>Limpieza profesional</p>
+  <div class="acciones">
+    <div class="cantidad">
+      <button onclick="if(this.nextElementSibling.textContent>1)this.nextElementSibling.textContent--">−</button>
+      <span>1</span>
+      <button onclick="this.previousElementSibling.textContent++">+</button>
+    </div>
+  </div>
+  <button class="add"
+  onclick="
+  const q=this.previousElementSibling.querySelector('span').textContent;
+  window.open('https://wa.me/50371742626?text=Hola%20Luxury%20Vision,%20quiero%20cotizar:%0A•%20Paño%20Microfibra%0A•%20Cantidad:%20'+q,'_blank');
+  ">
+  Agregar a mi canasta
+  </button>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Luxury Vision · Importaciones China & USA
+</footer>
+
+</body>
+</html>
+
