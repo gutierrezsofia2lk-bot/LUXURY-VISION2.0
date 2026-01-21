@@ -104,4 +104,165 @@
       border-radius: 20px;
       overflow: hidden;
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      transition: transf
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* WhatsApp */
+    .whatsapp {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      color: white;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+
+    /* Footer */
+    footer {
+      background: #ede3d4;
+      padding: 60px 30px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+
+    footer h4 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 15px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .copy {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #6b4f3f;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Luxury Vision</h1>
+  <p>AROS Y ACCESORIOS PARA ÓPTICAS</p>
+</header>
+
+<nav>
+  <a href="index.html">Inicio</a>
+  <a href="aros-acetato.html">Aros de Acetato</a>
+  <a href="aros-sol.html">Lentes de Sol</a>
+  <a href="accesorios.html">Accesorios</a>
+  <a href="carrito.html">Tu Compra</a>
+</nav>
+
+<section class="banner">
+  <h2>Colección Exclusiva</h2>
+  <p>Importados desde China y Estados Unidos</p>
+  <a href="aros-acetato.html">Ver Aros de Acetato</a>
+</section>
+
+<section class="categorias">
+  <h2>Nuestros Productos</h2>
+
+  <div class="grid">
+
+    <a href="aros-acetato.html">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300">
+        <h3>Aros de Acetato</h3>
+      </div>
+    </a>
+
+    <a href="aros-sol.html">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300">
+        <h3>Lentes de Sol</h3>
+      </div>
+    </a>
+
+    <a href="accesorios.html">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x300">
+        <h3>Accesorios</h3>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/50371742626" target="_blank">💬</a>
+
+<footer>
+  <div class="footer-grid">
+
+    <div>
+      <h4>Sobre Nosotros</h4>
+      <p>
+        Luxury Vision es una empresa salvadoreña dedicada a la importación
+        de aros y accesorios ópticos desde China y Estados Unidos,
+        ofreciendo productos modernos, de calidad y al mejor precio
+        para ópticas que buscan diferenciarse.
+      </p>
+      <p><strong>Tienda exclusivamente online</strong></p>
+    </div>
+
+    <div>
+      <h4>Nuestros Productos</h4>
+      <a href="aros-acetato.html">Aros de Acetato</a>
+      <a href="aros-sol.html">Lentes de Sol</a>
+      <a href="accesorios.html">Accesorios</a>
+    </div>
+
+    <div>
+      <h4>Tu Compra</h4>
+      <a href="carrito.html">Carrito</a>
+      <a href="promociones.html">Promociones</a>
+    </div>
+
+    <div>
+      <h4>Políticas</h4>
+      <a href="garantias.html">Política de Garantías</a>
+    </div>
+
+  </div>
+
+  <div class="copy">
+    © 2026 Luxury Vision · El Salvador
+  </div>
+</footer>
+
+</body>
+</html>
