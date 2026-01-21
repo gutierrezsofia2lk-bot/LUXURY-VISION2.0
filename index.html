@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Luxury Vision</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f5efe6; /* beige */
-      color: #4b3621; /* café */
+      background-color: #f5efe6;
+      color: #4b3621;
     }
+
+    nav {
+      background: #fffaf3;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #4b3621;
+      font-weight: 500;
+    }
+
     header {
       padding: 40px 20px;
       text-align: center;
       font-family: 'Playfair Display', serif;
     }
+
     header h1 {
       font-size: 42px;
       margin: 0;
     }
+
     header p {
       font-size: 16px;
       letter-spacing: 1px;
     }
+
     .catalogo {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
       padding: 40px;
     }
+
     .item {
       background: #fffaf3;
       border-radius: 18px;
       padding: 20px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     }
+
     .item img {
       width: 100%;
       border-radius: 14px;
     }
-    .item h3 {
-      margin-top: 15px;
-      font-family: 'Playfair Display', serif;
-    }
-    .item p {
-      font-size: 14px;
-      line-height: 1.5;
-    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -57,41 +70,42 @@
     }
   </style>
 </head>
+
 <body>
-  <nav style="background:#fffaf3;padding:15px;text-align:center;">
-  <a href="aros-sol.html">Aros de sol</a> |
-  <a href="aros-acetato.html">Aros de acetato</a> |
-  <a href="aros-metal.html">Aros de metal</a> |
-  <a href="aros-marca.html">Aros de marca</a> |
+
+<nav>
+  <a href="aros-sol.html">Aros de sol</a>
+  <a href="aros-acetato.html">Aros de acetato</a>
+  <a href="aros-metal.html">Aros de metal</a>
+  <a href="aros-marca.html">Aros de marca</a>
   <a href="accesorios.html">Accesorios</a>
 </nav>
 
-  <header>
-    <h1>Luxury Vision</h1>
-    <p>Monturas oftálmicas al por mayor</p>
-  </header>
+<header>
+  <h1>Luxury Vision</h1>
+  <p>Monturas oftálmicas al por mayor</p>
+</header>
 
-  <section class="catalogo">
-    <!-- MODELO 1 -->
-    <div class="item">
-      <img src="https://via.placeholder.com/400x400" alt="Modelo LV-001">
-      <h3>Modelo LV-001</h3>
-      <p>Material: Acetato premium<br>Colores: Negro / Carey / Beige<br>Pedido mínimo: 10 unidades</p>
-    </div>
+<section class="catalogo">
+  <div class="item">
+    <img src="https://via.placeholder.com/400x400">
+    <h3>Modelo LV-001</h3>
+    <p>Acetato premium</p>
+  </div>
 
-    <!-- MODELO 2 -->
-    <div class="item">
-      <img src="https://via.placeholder.com/400x400" alt="Modelo LV-002">
-      <h3>Modelo LV-002</h3>
-      <p>Material: Metal ligero<br>Colores: Dorado / Plata<br>Pedido mínimo: 10 unidades</p>
-    </div>
-  </section>
+  <div class="item">
+    <img src="https://via.placeholder.com/400x400">
+    <h3>Modelo LV-002</h3>
+    <p>Metal ligero</p>
+  </div>
+</section>
 
-  <footer>
-    © 2026 Luxury Vision · Distribución para ópticas
-  </footer>
-  <!-- Botón flotante de WhatsApp -->
-<a href="https://wa.me/50371742626?text=Hola%20Luxury%20Vision,%20quisiera%20información%20sobre%20aros%20al%20por%20mayor"
+<footer>
+  © 2026 Luxury Vision · El Salvador
+</footer>
+
+<!-- BOTÓN WHATSAPP -->
+<a href="https://wa.me/50371742626"
    target="_blank"
    style="
      position: fixed;
@@ -102,10 +116,8 @@
      border-radius: 50px;
      padding: 14px 20px;
      font-size: 15px;
-     font-family: Inter, sans-serif;
      text-decoration: none;
      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-     z-index: 1000;
    ">
    💬 WhatsApp
 </a>
